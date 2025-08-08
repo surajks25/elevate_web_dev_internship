@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header container">
+    <div class="logo">Task 4</div>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero container">
+    <h1>ELEVATE </h1>
+    <p>Elevate is an expert-led, software-powered law company. We provide software and services for the intersection of business and law. </p>
+    <img src="images/ban.png" alt="Banner image">
+  </section>
+
+  <main class="container content">
+    <article class="main-content">
+      <h2>Content</h2>
+      <p>Put your text here. On small screens this stacks above the sidebar.</p>
+    </article>
+
+    <aside class="sidebar">
+      <h3>Sidebar</h3>
+      <p>Links, notes or contact details.</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© 2025 MySite — Responsive demo</p>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
